@@ -1,7 +1,7 @@
 CREATE DATABASE meteorologia;
 USE meteorologia;
 
-CREATE TABLE estacion(
+CREATE TABLE estaciones(
 	id int auto_increment,
     latitud float,
     longitud float,
@@ -9,7 +9,7 @@ CREATE TABLE estacion(
     PRIMARY KEY(id)
 );
 
-CREATE TABLE muestra(
+CREATE TABLE muestras(
 	id int auto_increment,
     id_estacion int,
     fecha date,
